@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 330 21% 13%;
+    --foreground: 333 10% 83%;
+    --muted: 330 12% 17%;
+    --muted-foreground: 330 12% 67%;
+    --popover: 330 21% 10%;
+    --popover-foreground: 333 10% 93%;
+    --card: 330 21% 11%;
+    --card-foreground: 333 10% 88%;
+    --border: 330 11% 18%;
+    --input: 330 11% 21%;
+    --primary: 346 62% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 346 30% 75%;
+    --secondary-foreground: 346 30% 15%;
+    --accent: 330 21% 28%;
+    --accent-foreground: 330 21% 88%;
+    --destructive: 32, 85%, 53%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 346 62% 48%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 330 21% 13%;
+    --foreground: 333 10% 83%;
+    --muted: 330 12% 17%;
+    --muted-foreground: 330 12% 67%;
+    --popover: 330 21% 10%;
+    --popover-foreground: 333 10% 93%;
+    --card: 330 21% 11%;
+    --card-foreground: 333 10% 88%;
+    --border: 330 11% 18%;
+    --input: 330 11% 21%;
+    --primary: 346 62% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 346 30% 75%;
+    --secondary-foreground: 346 30% 15%;
+    --accent: 330 21% 28%;
+    --accent-foreground: 330 21% 88%;
+    --destructive: 32, 85%, 53%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 346 62% 48%;
+  }
+
+  .toast {
+    font-family: var(--font-sans);
+    font-size: 0.86rem;
+  }
+}
+
+@layer base {
+  * {
+    font-family: var(--font-sans);
+
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
