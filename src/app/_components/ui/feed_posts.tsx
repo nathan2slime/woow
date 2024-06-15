@@ -29,7 +29,7 @@ export const FeedPosts = ({ club, ...props }: Props) => {
           <p className="text-center text-base">Nenhuma publicação por aqui</p>
         )}
         {posts.map((post) => (
-          <CardPost data={post} />
+          <CardPost key={post.id} data={post} />
         ))}
       </div>
     </div>

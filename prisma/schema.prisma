@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 datasource db {
@@ -119,6 +120,9 @@ model Resume {
 
   userId    String
   reactions Reaction[]
+
+  title   String
+  content String
 }
 
 model Reaction {

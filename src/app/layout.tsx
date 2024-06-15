@@ -5,7 +5,7 @@ import { Baloo_Tamma_2 } from 'next/font/google';
 import { AuthProvider } from '~/app/_components/providers/auth';
 import { RootProvider } from '~/app/_components/providers/root';
 import { TRPCReactProvider } from '~/trpc/react';
-import { AppChildren } from '~/types';
+import type { AppChildren } from '~/types';
 
 export const metadata = {
   title: 'UniClub',

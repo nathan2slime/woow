@@ -21,19 +21,19 @@ export const AuthProvider = async ({ children }: Props) => {
 
   return (
     <div className="h-full w-full">
-      {isAuth ? (
-        children
-      ) : (
-        <div className="h-full w-full">
-          <Header />
+      {isAuth
+        ? children
+        : (session && session.user) && (
+            <div className="h-full w-full">
+              <Header />
 
-          <div className="h-[calc(100%-175px)] w-full overflow-x-hidden overscroll-y-auto">
-            {children}
-          </div>
+              <div className="h-[calc(100%-175px)] w-full overflow-x-hidden overscroll-y-auto">
+                {children}
+              </div>
 
-          <TabBar />
-        </div>
-      )}
+              <TabBar />
+            </div>
+          )}
     </div>
   );
 };
